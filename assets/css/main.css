@@ -10,8 +10,7 @@ nav{
     padding: 0px 0px 0px 0px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-   
+    align-items: center; 
 }
 #inicio{
     font-size: 20px;
@@ -19,6 +18,9 @@ nav{
     font-weight: bolder;
     color: rgb(10, 6, 6);
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .menu-home{
     
@@ -28,9 +30,8 @@ nav{
     text-decoration: none;
     font-size: 20px;
 }
-
-#image_portada{
-    width: 98%;
+.hero_container{
+    width: 100%;
     height: 70vh;
     background-image: url(../Images/wallpaperbetter.jpg);
     /*background-size: cover;*/
@@ -40,12 +41,35 @@ nav{
     background-size: 85% 100%;
     /*margin-right: 20px;*/
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: bolder;
     font-family: sans-serif;
-
 } 
+.hero_texto {
+    font-size: 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}  
+
+.card {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 15vh;
+   
+}
+
+.card_container {
+    display:flex;
+  
+   
+
+}
 
 #example-relative{
     width: 500px;
