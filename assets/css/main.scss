@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixin';
 
 body {
     margin: 0;
@@ -10,56 +11,41 @@ nav{
     width: 100%;
     height: 40px;
     padding: 0px 0px 0px 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
+ /*   @include alig_fto(flex, space-around, center);*/
 }
 #inicio{
     font-size: $txt-size;
-    /*font-family:monospace;*/
     font-weight: bolder;
     color: rgb(10, 6, 6);
     text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include alig_fto(flex, space-between, center);
 }
 .menu-home{
     color: rgb(7, 3, 3);
-    /*font-family:monospace ;*/
     font-weight: bolder;
     text-decoration: none;
     font-size: $txt-size;
 }
 .hero_container{
     width: 100%;
-    height: 90vh;
+    height: 60vh;
     background-image: url(../Images/wallpaperbetter.jpg);
-    /*background-size: cover;*/
     background-position: center;
     background-repeat: no-repeat;
-    /*background-position-x: center center;*/
     background-size: 90% 100%;
-    /*margin-right: 20px;*/
-    display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-weight: bolder;
     font-family: sans-serif;
 } 
 .hero_texto {
     font-size: $txt-size+10;
-    display:flex;
     flex-direction: column;
-    align-items: center;
 } 
 .card {
     border-radius: 8px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     border: 1px solid rgb(190, 186, 186);
+    transform:scale (1.05);
    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    /* height: 15vh;*/
 }
@@ -69,14 +55,9 @@ img{
 }
 .card_container {
     padding: 20px; 
-    display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
- /*   
-*/
+    flex-wrap: wrap; /*   */
 }
-
 @media screen and (max-width: 600px){
     nav {
       background-color:cyan;

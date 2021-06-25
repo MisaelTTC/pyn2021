@@ -1,3 +1,18 @@
+.nv_fto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.format {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.card_con {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
 body {
   margin: 0;
   background-color: #0288D1; }
@@ -8,13 +23,10 @@ nav {
   width: 100%;
   height: 40px;
   padding: 0px 0px 0px 0px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  /*   @include alig_fto(flex, space-around, center);*/ }
 
 #inicio {
   font-size: 20px;
-  /*font-family:monospace;*/
   font-weight: bolder;
   color: #0a0606;
   text-decoration: none;
@@ -24,40 +36,30 @@ nav {
 
 .menu-home {
   color: #070303;
-  /*font-family:monospace ;*/
   font-weight: bolder;
   text-decoration: none;
   font-size: 20px; }
 
 .hero_container {
   width: 100%;
-  height: 90vh;
+  height: 60vh;
   background-image: url(../Images/wallpaperbetter.jpg);
-  /*background-size: cover;*/
   background-position: center;
   background-repeat: no-repeat;
-  /*background-position-x: center center;*/
   background-size: 90% 100%;
-  /*margin-right: 20px;*/
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-weight: bolder;
   font-family: sans-serif; }
 
 .hero_texto {
   font-size: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
 
 .card {
   border-radius: 8px;
-  display: flex;
   flex-direction: column;
-  align-items: center;
   border: 1px solid #bebaba;
+  transform: scale 1.05;
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /* height: 15vh;*/ }
 
@@ -67,12 +69,9 @@ img {
 
 .card_container {
   padding: 20px;
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
- /*   
-*/ }
+  /*   */ }
 
 @media screen and (max-width: 600px) {
   nav {

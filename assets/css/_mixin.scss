@@ -1,0 +1,14 @@
+@mixin alig_fto ($dplay, $juscon, $aliitm) {
+    display: $dplay;
+    justify-content: $juscon;
+    align-items: $aliitm; 
+}
+.nv_fto{
+    @include alig_fto(flex, space-around, center);
+}
+.format{
+    @include alig_fto(flex, center, center);
+}
+.card_con{
+    @include alig_fto(flex, space-evenly, center);
+}
