@@ -12,3 +12,27 @@
 .card_con{
     @include alig_fto(flex, space-evenly, center);
 }
+
+/* herencia
+
+%button-p{
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-warning{
+    @extend %buttonm-p;
+    background-color: yellow;
+}
+
+o
+
+.button-save, .button-warning{
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+*/
