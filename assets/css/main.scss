@@ -6,6 +6,7 @@ body {
     background-color: $bakgd-col;
 }
 nav{
+    background-color: pink;
     font-size: $txt-size;
     font-family: $txt-type;
     width: 100%;
@@ -23,8 +24,8 @@ nav{
 .menu-home{
     color: rgb(7, 3, 3);
     font-weight: bolder;
-    text-decoration: none;
-    font-size: $txt-size;
+    text-decoration: none; 
+    font-size: $txt-size; 
 }
 .hero_container{
     width: 100%;
@@ -49,6 +50,15 @@ nav{
    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    /* height: 15vh;*/
 }
+header{
+    align-items: center;
+    img.header{
+        width: 10%;
+        height: 10%;
+      
+    }
+}
+
 img{
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -58,7 +68,7 @@ img{
     flex-direction: row;
     flex-wrap: wrap; /*   */
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px){ 
     nav {
       background-color:cyan;
       height: auto;
