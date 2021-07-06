@@ -36,27 +36,41 @@ o
     cursor: pointer;
 }
 */
+@media screen and (max-width: 600px) {
+  nav {
+    height: auto;
+    display: block; }
+
+  .hero_container {
+    height: 50vh; } }
 body {
   margin: 0;
-  background-color: #080808; }
+  background-color: white; }
 
 nav {
   background-color: pink;
   font-size: 20px;
   font-family: tahoma;
   width: 100%;
-  height: 40px;
-  padding: 0px 0px 0px 0px;
-  /*   @include alig_fto(flex, space-around, center);*/ }
+  height: 40px; }
 
-#inicio {
+header {
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  header img.header {
+    width: 10%;
+    height: 10%; }
+
+img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.fontcard {
   font-size: 20px;
+  font-family: tahoma;
   font-weight: bolder;
-  color: #0a0606;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  color: pink; }
 
 .menu-home {
   color: #070303;
@@ -71,46 +85,32 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90% 100%;
-  flex-direction: column;
-  font-weight: bolder;
-  font-family: sans-serif; }
+  flex-direction: column; }
 
 .hero_texto {
-  font-size: 30px;
+  font-size: 20px;
+  font-family: tahoma;
+  font-weight: bolder;
+  color: white;
   flex-direction: column; }
 
 .card {
   border-radius: 8px;
   flex-direction: column;
   border: 1px solid #bebaba;
-  transform: scale 1.05;
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* height: 15vh;*/ }
+  transform: scale 1.05; }
 
-header {
-  align-items: center; }
-  header img.header {
-    width: 10%;
-    height: 10%; }
-
-img {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+.card:hover {
+  border: 1px solid black; }
 
 .card_container {
-  padding: 20px;
+  padding: 25px;
   flex-direction: row;
-  flex-wrap: wrap;
-  /*   */ }
+  flex-wrap: wrap; }
 
-@media screen and (max-width: 600px) {
-  nav {
-    background-color: cyan;
-    height: auto;
-    display: block; }
-
-  .hero_container {
-    background-image: url(../Images/images02.jpeg);
-    height: 50vh; } }
+.foote {
+  font-family: tahoma;
+  text-align: center;
+  background-color: pink; }
 
 /*# sourceMappingURL=main.css.map */
